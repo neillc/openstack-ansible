@@ -84,12 +84,15 @@ General Guidelines for Submitting Code
 * New features, breaking changes and other patches of note must include a
   release note generated using `the reno tool`_. Please see the
   `Documentation and Release Note Guidelines`_ for more information.
-
+* All patches including code, documentation and release notes should be built and
+  tested locally with the appropriate test suite before submitting for review.
+  See `Development and Testing`_ for more information.
 .. _Git Commit Good Practice: https://wiki.openstack.org/wiki/GitCommitMessages
 .. _workflow documented here: http://docs.openstack.org/infra/manual/developers.html#development-workflow
 .. _advanced gerrit usage: http://www.mediawiki.org/wiki/Gerrit/Advanced_usage
 .. _Ansible best practices: http://docs.ansible.com/playbooks_best_practices.html
 .. _the reno tool: http://docs.openstack.org/developer/reno/usage.html
+.. _Development and Testing: scripts.html#development-and-testing
 
 Working on Features
 ~~~~~~~~~~~~~~~~~~~
@@ -200,7 +203,7 @@ OpenStack-Ansible has multiple forms of documentation with different intent.
    statements of intent. The work to fulfill the intent is ongoing. Any new
    documentation submissions should try to help this intent where possible.
 
-The `install guide <../install-guide/`_ intends to help deployers install
+The `install guide <../install-guide/>`_ intends to help deployers install
 OpenStack-Ansible for the first time. As such, the install guide is somewhat
 opinionated, focusing on ensuring that the deployer has to make very few
 decisions and implement the least amount of configuration possible to deploy
