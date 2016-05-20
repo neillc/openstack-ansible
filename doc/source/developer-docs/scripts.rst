@@ -45,7 +45,7 @@ necessary partitions, directories, and configurations. The script can be
 configured using environment variables - more details are provided on the
 `All-In-One`_ page.
 
-.. _All-In-One: quickstart-aio
+.. _All-In-One: quickstart-aio.html
 
 Development and Testing
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -180,6 +180,11 @@ Release notes may be built locally by executing:
 
 .. _the reno tool: http://docs.openstack.org/developer/reno/usage.html
 
+.. note::
+
+   The ``releasenotes`` build argument only tests committed changes.
+   Ensure your local changes are committed before running the
+   ``releasenotes`` build.
 
 Gating
 ^^^^^^
