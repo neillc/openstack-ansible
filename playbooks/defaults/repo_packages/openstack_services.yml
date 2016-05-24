@@ -76,6 +76,12 @@ neutron_lbaas_dashboard_git_install_branch: 528567509debcb9165bcf7bf675d31bde5d3
 neutron_lbaas_dashboard_git_dest: "/opt/neutron_lbaas_dashboard_{{ neutron_lbaas_dashboard_git_install_branch | replace('/', '_') }}"
 
 
+## Horizon Ironic dashboard plugin
+ironic_dashboard_git_repo: https://git.openstack.org/openstack/ironic-ui
+ironic_dashboard_git_install_branch: 167f1be15c465b063258b236634f945d08ee9a3a # HEAD of "master" as of 17 May 2016
+ironic_dashboard_git_dest: "/opt/ironic_dashboard_{{ ironic_dashboard_git_install_branch | replace('/', '_') }}"
+
+
 ## Keystone service
 keystone_git_repo: https://git.openstack.org/openstack/keystone
 keystone_git_install_branch: 6635f8dcac2c14c24e1033ca7226671075161eb6 # HEAD of "master" as of 19.05.2016
